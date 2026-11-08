@@ -17,15 +17,15 @@
             </div>
             <div class="d-flex gap-2 mt-3 mt-md-0">
                 <!-- Copy Button -->
-                <button onclick="copyResume()" class="btn btn-outline-success" title="Copy to clipboard">
+                <button type="button" onclick="copyResume()" class="btn btn-outline-success" title="Copy to clipboard">
                     <i class="bi bi-clipboard me-1"></i>Copy
                 </button>
                 <!-- Share Button -->
-                <button onclick="shareResume()" class="btn btn-outline-success" title="Share resume">
+                <button type="button" onclick="shareResume()" class="btn btn-outline-success" title="Share resume">
                     <i class="bi bi-share me-1"></i>Share
                 </button>
                 <!-- Print/PDF Button -->
-                <button onclick="window.print()" class="btn btn-success" title="Print or save as PDF">
+                <button type="button" onclick="window.print()" class="btn btn-success" title="Print or save as PDF">
                     <i class="bi bi-file-earmark-pdf me-1"></i>PDF
                 </button>
             </div>
@@ -54,13 +54,13 @@
                         <i class="bi bi-geo-alt me-1"></i>Chicago, Il
                     </div>
                     <div>
-                        <a href="#" class="text-success text-decoration-none me-2">
+                        <a href="https://www.linkedin.com/in/daniel-hern111" target="_blank" rel="noopener noreferrer" class="text-success text-decoration-none me-2">
                             <i class="bi bi-linkedin"></i> LinkedIn
                         </a>
-                        <a href="#" class="text-success text-decoration-none me-2">
+                        <a href="https://github.com/Daniel-IT443" target="_blank" rel="noopener noreferrer" class="text-success text-decoration-none me-2">
                             <i class="bi bi-github"></i> GitHub
                         </a>
-                        <a href="#" class="text-success text-decoration-none">
+                        <a href="https://github.com/Daniel-IT443/Portfolio" target="_blank" rel="noopener noreferrer" class="text-success text-decoration-none">
                             <i class="bi bi-globe"></i> Portfolio
                         </a>
                     </div>
@@ -76,8 +76,9 @@
                         <i class="bi bi-person-badge me-2"></i>Professional Summary
                     </h5>
                     <p class="text-muted">
-                        Recent IT graduate from DePaul University with CompTIA A+ certification. 
-                        Passionate about system administration, cloud technologies, and providing 
+                        Recent IT graduate from DePaul University with CompTIA A+ and Network+ certifications. 
+                        Currently studying for the Cisco CCNA certification while building skills in 
+                        system administration, cloud technologies, and providing 
                         exceptional technical support. Strong problem-solving skills and a commitment 
                         to continuous learning in the ever-evolving IT landscape.
                     </p>
@@ -92,7 +93,7 @@
                     </h5>
                     <div class="d-flex justify-content-between flex-wrap">
                         <div>
-                            <span class="fw-bold">Bachelor of Science in Information Technology</span>
+                            <span class="fw-bold">Bachelor of Arts in Information Technology</span>
                             <div class="text-muted">DePaul University, Chicago, IL</div>
                         </div>
                         <div class="text-success fw-semibold">Graduated: 2026</div>
@@ -114,12 +115,17 @@
                         <div>
                             <span class="fw-bold">CompTIA A+</span>
                             <div class="text-muted small">Core 1 (220-1101) &amp; Core 2 (220-1102)</div>
-                            <span class="badge bg-success bg-opacity-10 text-success">Active</span>
+                            <span class="badge bg-success bg-opacity-10 text-success">Certified</span>
                         </div>
                         <div>
-                            <span class="fw-bold">Network+</span>
-                            <div class="text-muted small">In Progress</div>
-                            <span class="badge bg-warning bg-opacity-10 text-warning">Pending</span>
+                            <span class="fw-bold">CompTIA Network+</span>
+                            <div class="text-muted small">Completed</div>
+                            <span class="badge bg-success bg-opacity-10 text-success">Certified</span>
+                        </div>
+                        <div>
+                            <span class="fw-bold">Cisco CCNA</span>
+                            <div class="text-muted small">Currently studying</div>
+                            <span class="badge bg-warning bg-opacity-10 text-warning">In Progress</span>
                         </div>
                     </div>
                 </div>
@@ -161,16 +167,14 @@
                     <div class="mb-3">
                         <div class="d-flex justify-content-between flex-wrap">
                             <div>
-                                <span class="fw-bold">IT Support Specialist</span>
-                                <div class="text-muted">Company Name, Chicago, IL</div>
+                                <span class="fw-bold">Sales Associate</span>
+                                <div class="text-muted">Menards, Morton Grove, IL</div>
                             </div>
-                            <div class="text-success fw-semibold">Jun 2024 - Present</div>
+                            <div class="text-success fw-semibold">June 2021 - Jul 2026 </div>
                         </div>
                         <ul class="text-muted mt-2">
-                            <li>Provide tier 1 and tier 2 technical support to 200+ end users across multiple departments</li>
-                            <li>Manage Active Directory user accounts, permissions, and group policies</li>
-                            <li>Deploy and configure Windows workstations and software updates</li>
-                            <li>Document troubleshooting procedures and create knowledge base articles</li>
+                            <li>Earned company recognition for outstanding customer service and de-escalation, clearly communicated product information to non-technical customers, and trained team members</li>
+                            <li>Built the troubleshooting and communication habits later applied to IT support</li>
                         </ul>
                     </div>
 
@@ -178,16 +182,15 @@
                     <div class="mb-3">
                         <div class="d-flex justify-content-between flex-wrap">
                             <div>
-                                <span class="fw-bold">IT Intern</span>
-                                <div class="text-muted">Company Name, Chicago, IL</div>
+                                <span class="fw-bold">Field Service Technician</span>
+                                <div class="text-muted">Gordon Flesch Company, Geneva, IL</div>
                             </div>
-                            <div class="text-success fw-semibold">Jan 2024 - May 2024</div>
+                            <div class="text-success fw-semibold">August 2026 - Present</div>
                         </div>
                         <ul class="text-muted mt-2">
-                            <li>Assisted with network infrastructure upgrades and hardware deployments</li>
-                            <li>Performed system maintenance and backup operations</li>
-                            <li>Created PowerShell scripts to automate routine administrative tasks</li>
-                            <li>Provided technical support during company-wide software migration</li>
+                            <li>Diagnose and repair multifunction devices (MFDs) in the field, troubleshooting hardware, firmware, and connectivity issues to minimize downtime</li>
+                            <li>Install and configure software and drivers, document resolutions in ticketing systems, and communicate technical findings clearly to non-technical customers</li>
+                            <li>De-escalate customer concerns and deliver user-focused support while maintaining accurate service records</li>
                         </ul>
                     </div>
                 </div>
@@ -237,39 +240,43 @@
     // Copy Resume to Clipboard
     function copyResume() {
         const resumeText = document.getElementById('resumeContent').innerText;
-        navigator.clipboard.writeText(resumeText).then(function() {
-            // Show success feedback
-            showToast('Resume copied to clipboard!', 'success');
-        }).catch(function() {
-            // Fallback for older browsers
-            const range = document.createRange();
-            range.selectNode(document.getElementById('resumeContent'));
-            window.getSelection().removeAllRanges();
-            window.getSelection().addRange(range);
-            document.execCommand('copy');
-            window.getSelection().removeAllRanges();
-            showToast('Resume copied to clipboard!', 'success');
-        });
+        if (navigator.clipboard && window.isSecureContext) {
+            navigator.clipboard.writeText(resumeText).then(function() {
+                showToast('Resume copied to clipboard!', 'success');
+            }).catch(copyResumeFallback);
+        } else {
+            copyResumeFallback();
+        }
+    }
+
+    function copyResumeFallback() {
+        const range = document.createRange();
+        range.selectNode(document.getElementById('resumeContent'));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        showToast('Resume copied to clipboard!', 'success');
     }
 
     // Share Resume
     function shareResume() {
         if (navigator.share) {
             navigator.share({
-                title: 'Daniel [Your Last Name] - IT Resume',
+                title: 'Daniel Hernandez - IT Resume',
                 text: 'Check out my IT resume!',
                 url: window.location.href,
             }).catch(function() {
                 // User cancelled or share failed
             });
-        } else {
-            // Fallback - copy URL to clipboard
+        } else if (navigator.clipboard && window.isSecureContext) {
             navigator.clipboard.writeText(window.location.href).then(function() {
                 showToast('Link copied! Share it with your network.', 'info');
             }).catch(function() {
-                // Prompt with URL
                 prompt('Copy this URL to share:', window.location.href);
             });
+        } else {
+            prompt('Copy this URL to share:', window.location.href);
         }
     }
 
