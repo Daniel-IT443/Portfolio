@@ -1,0 +1,330 @@
+﻿@{
+    ViewData["Title"] = "Resume";
+    ViewBag.ActivePage = "Resume";
+}
+
+<!-- Page Header -->
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+            <div>
+                <h1 class="display-4 fw-bold">
+                    <i class="bi bi-file-earmark-person-fill text-success me-2"></i>My Resume
+                </h1>
+                <p class="lead text-muted">
+                    A summary of my education, experience, and certifications.
+                </p>
+            </div>
+            <div class="d-flex gap-2 mt-3 mt-md-0">
+                <!-- Copy Button -->
+                <button onclick="copyResume()" class="btn btn-outline-success" title="Copy to clipboard">
+                    <i class="bi bi-clipboard me-1"></i>Copy
+                </button>
+                <!-- Share Button -->
+                <button onclick="shareResume()" class="btn btn-outline-success" title="Share resume">
+                    <i class="bi bi-share me-1"></i>Share
+                </button>
+                <!-- Print/PDF Button -->
+                <button onclick="window.print()" class="btn btn-success" title="Print or save as PDF">
+                    <i class="bi bi-file-earmark-pdf me-1"></i>PDF
+                </button>
+            </div>
+        </div>
+        <hr class="border-success opacity-25" style="width: 80px; border-width: 3px;" />
+    </div>
+</div>
+
+<!-- Resume Content -->
+<div class="row justify-content-center">
+    <div class="col-lg-10">
+        <div class="card shadow-sm border-0 rounded-4" id="resumeCard" 
+             style="background-color: rgba(45, 106, 79, 0.03);">
+            <div class="card-body p-4 p-md-5" id="resumeContent">
+
+                <!-- ======================================== -->
+                <!-- HEADER -->
+                <!-- ======================================== -->
+                <div class="text-center mb-4">
+                    <h1 class="display-5 fw-bold mb-1">Daniel Hernandez</h1>
+                    <div class="text-muted mb-2">
+                        <i class="bi bi-envelope me-1"></i>dhernandezzz149@gmail.com
+                        <span class="mx-2">|</span>
+                        <i class="bi bi-phone me-1"></i>+1 (773) 441 1091
+                        <span class="mx-2">|</span>
+                        <i class="bi bi-geo-alt me-1"></i>Chicago, Il
+                    </div>
+                    <div>
+                        <a href="#" class="text-success text-decoration-none me-2">
+                            <i class="bi bi-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="#" class="text-success text-decoration-none me-2">
+                            <i class="bi bi-github"></i> GitHub
+                        </a>
+                        <a href="#" class="text-success text-decoration-none">
+                            <i class="bi bi-globe"></i> Portfolio
+                        </a>
+                    </div>
+                </div>
+
+                <hr class="border-success opacity-25" />
+
+                <!-- ======================================== -->
+                <!-- PROFESSIONAL SUMMARY -->
+                <!-- ======================================== -->
+                <div class="mb-4">
+                    <h5 class="fw-bold text-success">
+                        <i class="bi bi-person-badge me-2"></i>Professional Summary
+                    </h5>
+                    <p class="text-muted">
+                        Recent IT graduate from DePaul University with CompTIA A+ certification. 
+                        Passionate about system administration, cloud technologies, and providing 
+                        exceptional technical support. Strong problem-solving skills and a commitment 
+                        to continuous learning in the ever-evolving IT landscape.
+                    </p>
+                </div>
+
+                <!-- ======================================== -->
+                <!-- EDUCATION -->
+                <!-- ======================================== -->
+                <div class="mb-4">
+                    <h5 class="fw-bold text-success">
+                        <i class="bi bi-mortarboard-fill me-2"></i>Education
+                    </h5>
+                    <div class="d-flex justify-content-between flex-wrap">
+                        <div>
+                            <span class="fw-bold">Bachelor of Science in Information Technology</span>
+                            <div class="text-muted">DePaul University, Chicago, IL</div>
+                        </div>
+                        <div class="text-success fw-semibold">Graduated: 2026</div>
+                    </div>
+                    <ul class="text-muted mt-2">
+                        
+                        <li>Relevant Coursework: Network Administration, Cybersecurity, Cloud Computing, Database Management</li>
+                    </ul>
+                </div>
+
+                <!-- ======================================== -->
+                <!-- CERTIFICATIONS -->
+                <!-- ======================================== -->
+                <div class="mb-4">
+                    <h5 class="fw-bold text-success">
+                        <i class="bi bi-patch-check-fill me-2"></i>Certifications
+                    </h5>
+                    <div class="d-flex flex-wrap gap-3">
+                        <div>
+                            <span class="fw-bold">CompTIA A+</span>
+                            <div class="text-muted small">Core 1 (220-1101) &amp; Core 2 (220-1102)</div>
+                            <span class="badge bg-success bg-opacity-10 text-success">Active</span>
+                        </div>
+                        <div>
+                            <span class="fw-bold">Network+</span>
+                            <div class="text-muted small">In Progress</div>
+                            <span class="badge bg-warning bg-opacity-10 text-warning">Pending</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ======================================== -->
+                <!-- TECHNICAL SKILLS -->
+                <!-- ======================================== -->
+                <div class="mb-4">
+                    <h5 class="fw-bold text-success">
+                        <i class="bi bi-tools me-2"></i>Technical Skills
+                    </h5>
+                    <div class="row g-2">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled text-muted">
+                                <li><i class="bi bi-check-circle-fill text-success me-1" style="font-size: 10px;"></i> Windows 10/11 Administration</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-1" style="font-size: 10px;"></i> Active Directory &amp; Group Policy</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-1" style="font-size: 10px;"></i> PowerShell &amp; Bash Scripting</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled text-muted">
+                                <li><i class="bi bi-check-circle-fill text-success me-1" style="font-size: 10px;"></i> Networking (TCP/IP, DNS, DHCP)</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-1" style="font-size: 10px;"></i> Azure &amp; Cloud Services</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-1" style="font-size: 10px;"></i> Linux Administration (Ubuntu/CentOS)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ======================================== -->
+                <!-- PROFESSIONAL EXPERIENCE -->
+                <!-- ======================================== -->
+                <div class="mb-4">
+                    <h5 class="fw-bold text-success">
+                        <i class="bi bi-briefcase-fill me-2"></i>Professional Experience
+                    </h5>
+
+                    <!-- Job 1 -->
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between flex-wrap">
+                            <div>
+                                <span class="fw-bold">IT Support Specialist</span>
+                                <div class="text-muted">Company Name, Chicago, IL</div>
+                            </div>
+                            <div class="text-success fw-semibold">Jun 2024 - Present</div>
+                        </div>
+                        <ul class="text-muted mt-2">
+                            <li>Provide tier 1 and tier 2 technical support to 200+ end users across multiple departments</li>
+                            <li>Manage Active Directory user accounts, permissions, and group policies</li>
+                            <li>Deploy and configure Windows workstations and software updates</li>
+                            <li>Document troubleshooting procedures and create knowledge base articles</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 2 -->
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between flex-wrap">
+                            <div>
+                                <span class="fw-bold">IT Intern</span>
+                                <div class="text-muted">Company Name, Chicago, IL</div>
+                            </div>
+                            <div class="text-success fw-semibold">Jan 2024 - May 2024</div>
+                        </div>
+                        <ul class="text-muted mt-2">
+                            <li>Assisted with network infrastructure upgrades and hardware deployments</li>
+                            <li>Performed system maintenance and backup operations</li>
+                            <li>Created PowerShell scripts to automate routine administrative tasks</li>
+                            <li>Provided technical support during company-wide software migration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ======================================== -->
+                <!-- PROJECTS HIGHLIGHT -->
+                <!-- ======================================== -->
+                <div class="mb-4">
+                    <h5 class="fw-bold text-success">
+                        <i class="bi bi-folder-fill me-2"></i>Selected Projects
+                    </h5>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="p-3 rounded-3" style="background-color: rgba(45, 106, 79, 0.05);">
+                                <span class="fw-bold">Active Directory Lab</span>
+                                <p class="text-muted small mb-0">Built Windows Server domain with DNS, DHCP, and GPOs</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 rounded-3" style="background-color: rgba(45, 106, 79, 0.05);">
+                                <span class="fw-bold">Azure Web Deployment</span>
+                                <p class="text-muted small mb-0">Deployed ASP.NET app with CI/CD pipeline</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ======================================== -->
+                <!-- FOOTER -->
+                <!-- ======================================== -->
+                <hr class="border-success opacity-25" />
+                <div class="text-center text-muted small">
+                    <i class="bi bi-c-circle me-1"></i>@DateTime.Now.Year - Daniel Hernandez
+                    <span class="mx-2">|</span>
+                    <i class="bi bi-clock me-1"></i>Available for new opportunities
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ======================================== -->
+<!-- SCRIPTS - Copy & Share Functionality -->
+<!-- ======================================== -->
+<script>
+    // Copy Resume to Clipboard
+    function copyResume() {
+        const resumeText = document.getElementById('resumeContent').innerText;
+        navigator.clipboard.writeText(resumeText).then(function() {
+            // Show success feedback
+            showToast('Resume copied to clipboard!', 'success');
+        }).catch(function() {
+            // Fallback for older browsers
+            const range = document.createRange();
+            range.selectNode(document.getElementById('resumeContent'));
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+            document.execCommand('copy');
+            window.getSelection().removeAllRanges();
+            showToast('Resume copied to clipboard!', 'success');
+        });
+    }
+
+    // Share Resume
+    function shareResume() {
+        if (navigator.share) {
+            navigator.share({
+                title: 'Daniel [Your Last Name] - IT Resume',
+                text: 'Check out my IT resume!',
+                url: window.location.href,
+            }).catch(function() {
+                // User cancelled or share failed
+            });
+        } else {
+            // Fallback - copy URL to clipboard
+            navigator.clipboard.writeText(window.location.href).then(function() {
+                showToast('Link copied! Share it with your network.', 'info');
+            }).catch(function() {
+                // Prompt with URL
+                prompt('Copy this URL to share:', window.location.href);
+            });
+        }
+    }
+
+    // Toast Notification
+    function showToast(message, type) {
+        // Remove existing toasts
+        const existing = document.querySelector('.toast-container');
+        if (existing) existing.remove();
+
+        // Create container
+        const container = document.createElement('div');
+        container.className = 'toast-container position-fixed bottom-0 end-0 p-3';
+        container.style.zIndex = '9999';
+
+        // Create toast
+        const toast = document.createElement('div');
+        toast.className = `toast align-items-center text-white bg-${type === 'success' ? 'success' : 'info'} border-0 show`;
+        toast.role = 'alert';
+        toast.innerHTML = `
+            <div class="d-flex">
+                <div class="toast-body">
+                    <i class="bi bi-${type === 'success' ? 'check-circle-fill' : 'info-circle-fill'} me-2"></i>
+                    ${message}
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+            </div>
+        `;
+
+        container.appendChild(toast);
+        document.body.appendChild(container);
+
+        // Auto-dismiss after 3 seconds
+        setTimeout(function() {
+            toast.classList.remove('show');
+            setTimeout(function() {
+                container.remove();
+            }, 300);
+        }, 3000);
+    }
+</script>
+
+<!-- Toast Styles -->
+<style>
+    .toast-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+    }
+    .toast {
+        min-width: 280px;
+        border-radius: 8px !important;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+    .toast .btn-close {
+        filter: brightness(0) invert(1);
+    }
+</style>

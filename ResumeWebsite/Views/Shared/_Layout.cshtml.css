@@ -1,0 +1,139 @@
+﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+a {
+    color: #0077cc;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}
+
+/* ===== GREEN THEME VARIABLES ===== */
+:root {
+    --bs-primary: #2d6a4f;
+    --bs-primary-dark: #1a3c2a;
+    --bs-primary-light: #40916c;
+}
+
+/* ========================================
+   NAVBAR HOVER EFFECTS - ENLARGE ON HOVER
+   ======================================== */
+
+/* All nav links - smooth transition */
+.navbar .nav-link {
+    transition: all 0.25s ease-in-out !important;
+    display: inline-block !important;
+    padding: 0.5rem 1rem !important;
+}
+
+    /* Hover effect - enlarge and change color */
+    .navbar .nav-link:hover {
+        transform: scale(1.15) !important;
+        color: #95d5b2 !important;
+    }
+
+    /* Active link styling */
+    .navbar .nav-link.active {
+        color: #95d5b2 !important;
+        background-color: rgba(255, 255, 255, 0.08);
+        border-radius: 4px;
+    }
+
+        /* Active link + Hover - keep the scale */
+        .navbar .nav-link.active:hover {
+            transform: scale(1.15) !important;
+        }
+
+/* Brand/logo - smooth transition */
+.navbar-brand {
+    transition: all 0.25s ease-in-out !important;
+}
+
+    /* Brand/logo - enlarge on hover */
+    .navbar-brand:hover {
+        transform: scale(1.05) !important;
+        color: #95d5b2 !important;
+    }
+
+/* ===== DARK MODE OVERRIDES ===== */
+[data-bs-theme="dark"] {
+    --bs-body-bg: #0d1f15;
+    --bs-body-color: #d8f3dc;
+    --bs-border-color: #2d6a4f;
+}
+
+    [data-bs-theme="dark"] .navbar {
+        background-color: #0a1a12 !important;
+    }
+
+    [data-bs-theme="dark"] .footer {
+        background-color: #0a1a12;
+    }
+
+    [data-bs-theme="dark"] .card {
+        background-color: #1a3c2a;
+        border-color: #2d6a4f;
+    }
+
+    /* Dark mode - lighter green on hover */
+    [data-bs-theme="dark"] .navbar .nav-link:hover {
+        color: #d8f3dc !important;
+    }
+
+    [data-bs-theme="dark"] .navbar-brand:hover {
+        color: #d8f3dc !important;
+    }
+
+/* ===== SCROLL TO TOP BUTTON ===== */
+#scrollTopBtn {
+    background-color: #2d6a4f;
+    border-color: #2d6a4f;
+}
+
+    #scrollTopBtn:hover {
+        background-color: #40916c;
+        border-color: #40916c;
+    }
+
+
